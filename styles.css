@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+.flexbox-row, .techology-field, .experience-container, .project-container, .selfpromotion-content-field, body, .container-padding, .experience-field, .projects-field {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexbox-col, .section0-profile-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-center, .section0-profile-navigation {
+  justify-content: center;
+  align-items: center;
+}
+
+.heading1, .profile-content-heading2, .profile-content-heading {
+  font-family: "Teko", sans-serif;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+
+.heading2, .selfpromotion-heading {
+  font-family: "Tilt Neon", sans-serif;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.heading3, .experience-headingElements, .projects-content-heading {
+  font-family: "Oswald", sans-serif;
+  font-size: 15px;
+  text-transform: capitalize;
+  
+}
+
+.para1, .technology-content, .experience-content-para, .project-content-para, .profile-intro-text, .profile-content-para {
+  font-family: "Gabarito", sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  margin-top: 15px;
+  line-height: 25px;
+}
+
+.container-padding, .projects-field {
+  padding: 20px 30px;
+}
+
+.section0-profile-navigation {
+  flex: 1;
+}
+
+.section1-profilecontent-navigation{
+  padding: 20px 20px;
+}
+
+.section0-profile-navigation {
+  position: sticky;
+  flex: 0 0 auto;
+  top: 0;
+  height: 100vh;
+  overflow: auto;
+  background-color: #23e5ce;
+  padding: 20px 40px;
+  
+}
+
+.profile-content-heading {
+  font-size: 4ic;
+}
+
+.profile-content-heading2 {
+  font-size: 1.3c;
+  animation: left-to-right 1s linear forwards;
+}
+
+@keyframes left-to-right {
+  0%{
+    transform: translateX(-100px);
+  }
+
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+
+.selfpromotion-content-field {
+  align-items: center;
+}
+
+.horizontal-line{
+  width: 50px;
+  border: none;
+  border-top: 2px solid #000;
+  margin-right: 5px;
+  transition:0.3s;
+  
+  
+}
+
+.selfpromotion-heading{
+  color: #64675f;
+}
+
+.social-icon-fieldcontainer{
+  display: flex;
+  flex-direction: row;
+}
+
+.social-icon-field {
+  padding-top: 20px;
+}
+
+.social-icon {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.bi-linkedin{
+  margin-left: -70px;
+}
+
+.social-icon-text{
+  width: 0;
+  height: 0;
+  position: relative;
+  transition:0.3s;
+  opacity: 0;
+}
+
+/* Section 1 ( Profile Content Navigation ) ############# */
+
+.section1-profilecontent-navigation{
+  background-color: #f2f2f2;;
+}
+
+.profile-intro-text, .experience-container{
+  padding: 30px;
+}
+
+.profile-intro-text{
+  border-radius: 10px;
+  color: #757171;
+}
+
+.experience1-header, .project-image {
+  flex: 1;
+}
+
+.experience1-content-field, .project-content{
+  flex: 3;
+}
+
+.projects-field{
+  margin-top: 30px; 
+}
+
+.technology-content {
+  padding: 0px 10px;
+  margin-right: 5px;
+  border: #757171 0.5px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.project-container{
+  column-gap: 30px;
+}
+
+.project-image{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.horizontal-line2{
+  height: 1px;
+  border: none;
+  background-color: #000000;
+}
+
+/* on Hover Properties */
+
+.profile-intro-field :hover, .experience-container:hover, .projects-field:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 10px 5px;
+  border-radius: 10px;
+}
+
+.selfpromotion-content-field:hover .horizontal-line{
+  width: 90px;
+}
+
+.social-icon-field:hover .social-icon-text{
+  width: auto;
+  opacity: 1;
+  padding-right: 30px;
+  padding-left: 15px;
+  margin-right: 70px;
+}
+
+.profile-intro-text:hover{
+  color: black;
+}
+
