@@ -4,12 +4,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
-.flexbox-row, .techology-field, .experience-container, .project-container, .selfpromotion-content-field, body, .container-padding, .experience-field, .projects-field {
+.flexbox-row, .techology-field, .experience-container, .project-container, .selfpromotion-content-field, body, .container-padding, .projects-field, .social-icon-fieldcontainer {
   display: flex;
   flex-direction: row;
 }
 
-.flexbox-col, .section0-profile-navigation {
+.flexbox-col, .section0-profile-navigation, .experience-field {
   display: flex;
   flex-direction: column;
 }
@@ -50,7 +50,7 @@
   padding: 20px 30px;
 }
 
-.section0-profile-navigation {
+.section0-profile-navigation, .section1-profilecontent-navigation {
   flex: 1;
 }
 
@@ -136,7 +136,7 @@
 /* Section 1 ( Profile Content Navigation ) ############# */
 
 .section1-profilecontent-navigation{
-  background-color: #f2f2f2;;
+  background-color: #fff7f7;;
 }
 
 .profile-intro-text, .experience-container{
@@ -148,11 +148,11 @@
   color: #757171;
 }
 
-.experience1-header, .project-image {
+.experience-header, .project-image {
   flex: 1;
 }
 
-.experience1-content-field, .project-content{
+.experience-content-field, .project-content{
   flex: 3;
 }
 
