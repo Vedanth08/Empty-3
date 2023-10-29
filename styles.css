@@ -9,7 +9,7 @@
   flex-direction: row;
 }
 
-.flexbox-col, .section0-profile-navigation, .experience-field {
+.flexbox-col, .section0-profile-navigation, .experience-field, .experience-header{
   display: flex;
   flex-direction: column;
 }
@@ -143,6 +143,7 @@
   padding: 30px;
 }
 
+
 .profile-intro-text, .experience-content-para, .project-content-para{
   color: #757171;
 }
@@ -151,11 +152,15 @@
   flex: 1;
 }
 
+.experience-header{
+  align-items: center;
+}
+
 .experience-content-field, .project-content{
   flex: 3;
 }
 
-.projects-field{
+.projects-field, .experience-container{
   margin-top: 30px; 
 }
 
