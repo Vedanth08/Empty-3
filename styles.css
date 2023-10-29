@@ -143,8 +143,7 @@
   padding: 30px;
 }
 
-.profile-intro-text{
-  border-radius: 10px;
+.profile-intro-text, .experience-content-para, .project-content-para{
   color: #757171;
 }
 
@@ -203,7 +202,7 @@
   margin-right: 70px;
 }
 
-.profile-intro-text:hover{
+.profile-intro-text:hover , .experience-content-para:hover , .project-content-para:hover{
   color: black;
 }
 
