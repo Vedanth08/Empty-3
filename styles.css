@@ -47,18 +47,11 @@ body{
 /* Section 1 Home Main Section ###################### */
 
 .section1-home{
-    background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/02/06/e5/getlstd-property-photo.jpg?w=700&h=-1&s=1");
-    width: 100%;
-    height: 80vh;
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    height: 70vh;
 }
 
 
@@ -72,6 +65,13 @@ body{
 
 }
 
+
+
+.buttons-container{
+    z-index: 1;
+    position: absolute;
+}
+
 .propertyButton{
     text-transform: capitalize;
     color: white; 
@@ -83,6 +83,14 @@ body{
 .section2-companyInfo{
     background-color: #000424;
     padding:60px 0px;
+
+}
+
+.companyinfo-contentfield{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .companyinfo-heading{
@@ -92,6 +100,9 @@ body{
 
 .companyinfo-para{
     color: white;
+    max-width: 650px;
+    line-height: 30px;
+    text-align: center;
 }
 
 .para-divide{
@@ -102,6 +113,8 @@ body{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(1,1fr);
+    column-gap: 40px;
+    margin-top: 50px;
 }
 
 .companyinfo-imagevalue{
@@ -214,9 +227,13 @@ body{
     width: 180px;
     height: 150px;
     padding: 0px 20px;
-
-    
+    transition: transform 0.1s linear;
 }
+
+.propertyByarea-fieldgrid-img:hover{
+    transform: scale(1.2);
+}
+
 
 
 .propertyByarea-fieldgrid-values{
@@ -262,6 +279,7 @@ body{
     justify-content: center;
     align-items: center;
     
+    
 }
 
 .property-listing-container{
@@ -270,7 +288,8 @@ body{
     align-items: center;
     flex-direction: row;
     
-    background-image: url("https://vd.waljoshinfotech.online/wp-content/uploads/2023/08/Room1-scaled-2.jpg");
+    
+    background-image: url("cityview2.jpg");
     background-position: center center;
     background-size: cover;
 
@@ -290,7 +309,7 @@ body{
 }
 
 .property-listing-headingtext{
-    flex: 3;
+    flex: 1;
     justify-content: start;
     text-align: start;
     padding: 0px 0px 0px 20px;
@@ -299,6 +318,11 @@ body{
 
 .property-listing-contactinfo{
     flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
     
 }
 
@@ -317,6 +341,11 @@ body{
 
 /* Section 6 Services Section ###################### */
 
+.section6-services{
+    padding: 20px;
+    
+}
+
 .service-heading{
     text-transform: uppercase;
     text-align: center;
@@ -325,11 +354,12 @@ body{
 }
 
 .listed-services-container{
-    column-gap : 20px;
+    column-gap : 40px;
 }
 
 .listed-services-field{
     padding: 0px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 .services-fieldimg{
@@ -346,7 +376,7 @@ body{
 /* Section 7 Latest Properties Section ###################### */
 
 .section7-latest-properties{
-    margin : 50px 0px;
+    margin : 50px 0px 100px 0px;
 }
 
 .latest-properties-headingfield{
@@ -368,6 +398,7 @@ body{
 
 .listed-latest-properties-field{
     padding: 0px;
+    box-shadow: rgba(30, 30, 63, 0.25) 0px 50px 50px -20px, rgba(0, 0, 0, 0.3) 0px 30px 30px -30px, rgba(10, 37, 44, 0.35) 0px -2px 6px 0px inset;
 }
 
 .latest-properties-img{
@@ -389,10 +420,15 @@ body{
     background: #000424;
 }
 
+.companymission-grid-container{
+    padding: 0px 60px;
+}
+
 .companymission-item-heading{
     text-transform: capitalize;
     text-align: center;
     color: white;
+    margin-bottom: 30px;
 }
 
 .companymission-item-para{
@@ -405,6 +441,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.mission-img{
+    border-radius: 5px;
 }
 
 
@@ -421,6 +461,7 @@ body{
 
 .companystory-grid-item-img{
     height: 500px;
+    border-radius: 5px;
 }
 
 /* Section 10 query request Section ###################### */
@@ -456,6 +497,7 @@ body{
     display: flex;
     flex-direction: row;
     column-gap: 10px;
+    row-gap: 20px;
 }
 
 .details-labels{
@@ -476,9 +518,15 @@ body{
     text-transform: capitalize;
 }
 
+.listing-input-content{
+    margin-top: 25px;
+}
+
 .submit-field{
-    margin-top: 20px;
+    margin-top: 30px;
     align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .submit-field .btn{
@@ -498,6 +546,7 @@ body{
     text-align: center;
     padding-bottom: 20px;
     color: white;
+    font-size: 30px;
 }
 
 .listing-input-field{
@@ -521,7 +570,6 @@ body{
 .frequentlyasked-container{
     display: flex;
     flex-direction: column;
-
 }
 
 
@@ -547,33 +595,17 @@ body{
     margin-top: 40px;
 }
 
-.question-field {
-    cursor: pointer;
-    padding-top: 15px;
-  }
 
-.answer-field{
-    padding-left: 15px;
-    transition: transform 0.5s linear;
+.frequentlyasked-img{
+    border-radius: 5px;
 }
 
-
-  
-/* Start with answer fields hidden */
-  /* .answer-field {
-    display: none; 
-  }
-   */
-/* Show the answer field when hovering over the question */
-  /* .question-field:hover + .answer-field {
-    display: block; 
-  }
-   */
 
 /* Section 13 Footer Section ###################### */
 
 .section13-footer{
-    margin-top: 50px;
+    padding-top: 70px;
+    background-color: #000424;
 }
 
 .footer-container{
@@ -581,6 +613,7 @@ body{
 }
 .address-heading{
     padding-bottom: 20px;
+    color: white;
 }
 
 .address-item1{
@@ -603,6 +636,10 @@ body{
 .footer-address-fleid{
     display: flex;
     flex-direction: column;
+}
+
+.footer-address-fleid p,.profile-heading, .footer-profile-field p, .footer-profile-field h3{
+    color: white;
 }
 
 .profile-para{
@@ -628,6 +665,13 @@ body{
 
 .bi-facebook{
     background: linear-gradient(45deg, #1877f2, #47a0ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.bi-github{
+    background: blue;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;

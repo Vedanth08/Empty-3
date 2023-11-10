@@ -60,18 +60,39 @@
 
             </div>
 
-            <!-- <div>
-                Vedanth
-            </div> -->
-
-
         </section>
 
 <!-- ****************************** Section 1 ( Home Main Section ) ********************************************************************************************** -->
         
         <section class="section1-home img-properties" id="home-section">
 
-            <div class="section1-property-buttonsfield w3-animate-top">
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-container" data-bs-ride="carousel">
+
+                <div class="carousel-inner carousel-field">
+
+                  <div class="carousel-item active">
+
+                    <img src="house_2.jpg" class="d-block w-100 carousel-img" alt="...">
+
+                  </div>
+
+                  <div class="carousel-item">
+
+                    <img src="apartments.jpg" class="d-block w-100 carousel-img" alt="...">
+
+                  </div>
+
+                  <div class="carousel-item">
+
+                    <img src="property3.jpg" class="d-block w-100 carousel-img" alt="...">
+
+                  </div>
+
+                </div>
+
+            </div>
+
+            <div class="section1-property-buttonsfield w3-animate-top buttons-container">
 
                 <button type="button" class="btn btn-success propertyButton latest-button">latest</button>
 
@@ -82,6 +103,7 @@
                 <button type="button" class="btn btn-success propertyButton price-button">Price</button>
 
             </div>
+
 
         </section>
 
@@ -95,11 +117,11 @@
 
                     <h2 class="companyinfo-heading text-property-02 ">we bring dream homes to reality</h2>
 
-                    <p class="companyinfo-para text-property-01 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut <span class="para-divide"> labore et dolore magna aliqua.Ut enim ad minim veniam,</span> </p>
+                    <p class="companyinfo-para text-property-01 "> a team of experienced architects and designers who can help clients create custom home plans or renovate existing homes.</p>
                 
                 </div>
 
-                <div class="container-fluid companyinfo-property-values">
+                <div class="container-fluid companyinfo-property-values container">
 
                     <img class="companyinfo-imagevalue img-properties" src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""/>
                     
@@ -137,7 +159,7 @@
 
             </div>
 
-            <div class="companyinfo-propertyCounter">
+            <div class="companyinfo-propertyCounter container">
 
                 <div class="companyinfo-propertyCounter-grid">
 
@@ -206,7 +228,7 @@
 
                     <div class="propertyByarea-fieldgrid-values">
 
-                        <img class="propertyByarea-fieldgrid-img img-cheenai" src="https://mir-s3-cdn-cf.behance.net/projects/404/0b57b1131917665.Y3JvcCwyNTAwLDE5NTUsMCwyNzI.png"/>
+                        <img class="propertyByarea-fieldgrid-img " src="https://mir-s3-cdn-cf.behance.net/projects/404/0b57b1131917665.Y3JvcCwyNTAwLDE5NTUsMCwyNzI.png"/>
                     
                     </div>
 
@@ -385,9 +407,15 @@
 
                 <h3 class="property-listing-headingtext property-listing-item"> list your property with us now </h3>
 
-                <h5 class="property-listing-contactinfo property-listing-item "> +91 XXXXX XXXXX </h5>
+                <div class="property-listing-contactinfo">
 
-                <button class="btn btn-success property-listing-addbutton property-listing-item"> add your property </button>
+                    <h5 class=" property-listing-item "> +91 XXXXX XXXXX </h5>
+
+                    <button class="btn btn-success property-listing-addbutton property-listing-item"> add your property </button>
+
+                </div>
+
+                
 
             </div> 
 
@@ -395,7 +423,7 @@
 
 <!-- ****************************** Section 6 (Services Section ) ********************************************************************************************** -->
         
-        <section class="section6-services container" id="services-section">
+        <section class="section6-services" id="services-section">
 
             <div class="services-headingfield">
                  
@@ -519,24 +547,20 @@
 
         <section class="section8-companymission" id="companymission-section">
 
-            <div class="container">
+            <div class=" row column-gap-4 companymission-grid-container ">
 
-                <div class=" row column-gap-4 companymission-grid-container ">
+                <div class=" col companymission-grid-item ">
 
-                    <div class=" col companymission-grid-item ">
-    
-                        <h3 class="companymission-item-heading">our Mission</h3>
-    
-                        <p class="companymission-item-para"> “is to redefine your living spaces through excellence in estate and rental services, coupled with meticulous cleaning and painting expertise. We are driven by a singular goal: your complete satisfaction and happiness. With a dedication to quality, we transform properties into homes, ensuring every detail is perfected. From seamless rental experiences to pristine cleanliness and captivating paintwork, we craft environments that resonate with comfort and joy. Our commitment to delivering beyond expectations underscores our promise to create spaces that inspire and uplift. At Finders & Cleaners, your contentment is our ultimate achievement, and we’re honored to be your partners in realizing your vision.” </p>
-    
-                    </div>
-    
-                    <div class=" col companymission-grid-item grid-img-item " >
-    
-                        <img class=" col-12 companymission-grid-item-img mission-img" src="P:\Projects\Samples\8.jpg"/>
-    
-                    </div>
-    
+                    <h3 class="companymission-item-heading">our Mission</h3>
+
+                    <p class="companymission-item-para"> “is to redefine your living spaces through excellence in estate and rental services, coupled with meticulous cleaning and painting expertise. We are driven by a singular goal: your complete satisfaction and happiness. With a dedication to quality, we transform properties into homes, ensuring every detail is perfected. From seamless rental experiences to pristine cleanliness and captivating paintwork, we craft environments that resonate with comfort and joy. Our commitment to delivering beyond expectations underscores our promise to create spaces that inspire and uplift. At Finders & Cleaners, your contentment is our ultimate achievement, and we’re honored to be your partners in realizing your vision.” </p>
+
+                </div>
+
+                <div class=" col companymission-grid-item grid-img-item " >
+
+                    <img class=" col-12 companymission-grid-item-img mission-img" src="P:\Projects\Samples\8.jpg"/>
+
                 </div>
 
             </div>
@@ -645,12 +669,14 @@
             <div class="property-listing-field container">
 
                 <h3 class="property-listing-heading">
+
                     list your property
+
                 </h3>
 
                 <div class="container-fluid g-2 listing-input-field">
 
-                    <div class="row column-gap-3 mb-3">
+                    <div class="row column-gap-3 mb-3 listing-input-content">
 
                         <input class="col listing-input" type="text" placeholder="street"/>
     
@@ -660,7 +686,7 @@
                         
                     </div>
 
-                    <div class="row column-gap-3 mb-3">
+                    <div class="row column-gap-3 mb-3 listing-input-content">
 
                         <input class="col listing-input " type="text" placeholder="state"/>
     
@@ -772,7 +798,7 @@
 
                 <div class="col-6">
 
-                    <img class="col-12" src="9.jpg"/>
+                    <img class="col-12 frequentlyasked-img" src="9.jpg"/>
 
                 </div>
 
